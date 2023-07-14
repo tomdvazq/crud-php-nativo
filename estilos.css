@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerCrud, .containerCreate, .containerEdit{
+    display: flex;
+    flex-direction: column;
+}
+
+.headerCrud{
+    border-bottom: solid 1px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.headerCrud form input{
+    padding: 5px;
+}
+
+.containerCrud .headerCrud a.ingresarCliente{
+    width: 160px;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+}
+
+.containerCrud table {
+    padding: 5px;
+}
+
+.containerCrud table thead tr th,
+.containerCrud table tbody tr td{
+    text-align: center;
+    padding: 5px;
+    border-right: solid 1px rgba(0, 0, 0, .2);
+    border-bottom: solid 1px rgba(0, 0, 0, .2);
+}
+
+.containerCrud table thead tr th {
+    text-transform: uppercase;
+}
+
+
+.containerCrud table tbody tr td img,
+.imagenPerfilEditar{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.containerCrud table tbody tr td a{
+    color: white;
+    padding: 5px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.containerCrud table tbody tr td a.editar{
+    background-color: purple;
+}
+
+.containerCrud table tbody tr td a.eliminar{
+    background-color: red;
+}
+
+.containerEdit,
+.containerCreate{
+    justify-content: center;
+    align-items: center;
+}
+
+.containerCreate form,
+.containerEdit form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerEdit form input,
+.containerCreate form input {
+    padding: 5px;
+}
+
+.actions button {
+    padding: 5px;
+    background-color: none;
+    border: solid 1px rgba(0, 0, 0, .5);
+}
+
+.actions a {
+    padding: 5px;
+    background-color: none;
+    border: solid 1px rgba(0, 0, 0, .5);
+    text-decoration: none;
+    color: black;
+}
